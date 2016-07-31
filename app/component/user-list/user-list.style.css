@@ -1,0 +1,35 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31 juil. 2016, 16:15:24
+    Author     : Arnaud
+*/
+
+li.projet {
+    list-style-type: none;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #c7c7c7;
+    background-color: #c7c7c7;
+    margin: 2px;
+    padding: 0px;
+    font-size: 0.6em;
+    
+    display : inline-block;
+    text-shadow: none;
+        
+}
+
+li.role {
+    margin : 5px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #999999;
+    list-style-type: none;
+}
+
+ul.projet, ul.role {
+    padding-left: 0px;
+}

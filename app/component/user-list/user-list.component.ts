@@ -11,6 +11,7 @@ import {Observable} from 'rxjs/Observable';
     moduleId : module.id,
     selector: 'user-list',
     templateUrl: "user-list.template.html",
+    styleUrls: ["user-list.style.css"],
     providers:[JIRAUsersService],
     directives : [DataTable,Column]
 })

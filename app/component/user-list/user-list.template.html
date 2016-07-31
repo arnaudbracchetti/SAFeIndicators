@@ -6,12 +6,12 @@
     <p-column field="displayName" header="Nom"></p-column>
     <p-column header="projet">
         <template let-user="rowData">
-            <ul >
-                <li class="toto" *ngFor="let a of user.roles">
+            <ul class="role">
+                <li class="role" *ngFor="let a of user.roles">
                     {{a.name}}
                     
-                        <ul>
-                            <li *ngFor="let b of a.projects">
+                        <ul class="projet">
+                            <li *ngFor="let b of a.projects" class="projet">
                                 {{b.name}}
                             </li>
                         
