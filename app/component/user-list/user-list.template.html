@@ -1,0 +1,29 @@
+
+{{service.users}}
+
+<p-dataTable [value]="service.users|async" [rows]="20" [paginator]="true" [pageLinks]="4">
+    <p-column field="login" header="Login"></p-column>
+    <p-column field="displayName" header="Nom"></p-column>
+    <p-column header="projet">
+        <template let-user="rowData">
+            <ul >
+                <li class="toto" *ngFor="let a of user.roles">
+                    {{a.name}}
+                    
+                        <ul>
+                            <li *ngFor="let b of a.projects">
+                                {{b.name}}
+                            </li>
+                        
+                        </ul>
+                    
+                    
+                </li>
+            </ul>
+            
+              
+        </template>
+
+    </p-column>
+   
+</p-dataTable>
